@@ -33,8 +33,7 @@ jobs:
       - name: Initialize LineageOS build environment
         run: |
           ~/bin/repo init --depth=1 -u https://github.com/LineageOS/android.git -b lineage-17.1 --git-lfs     
-          ls -lah
-          cd android
+          cd Build
           mkdir -p .repo/local_manifests
           cp .github/workflows/s2.xml .repo/local_manifests/
           ~/bin/repo sync
@@ -42,7 +41,7 @@ jobs:
 
       - name: Start the build
         run: |
-          cd android
+          cd Build
           source build/envsetup.sh
           lunch lineage_s2-release
 
