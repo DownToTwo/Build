@@ -20,6 +20,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
+          mkdir -p ~/bin
           touch ~/bin/repo
           curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
           chmod a+x ~/bin/repo
