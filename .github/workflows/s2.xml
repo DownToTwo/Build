@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- Remotes -->
+    <remote name="github" fetch="https://github.com/" />
+    <!-- Device Tree (DT) -->
+    <project name="LineageOS/android_device_leeco_s2" path="device/leeco/s2" remote="github" revision="lineage-18.1" />
+    <!-- Vendor Tree (VT) -->
+    <project name="LineageOS/android_vendor_leeco_s2" path="vendor/leeco/s2" remote="github" revision="lineage-18.1" />
+    <!-- Kernel Tree (KT) -->
+    <project name="LineageOS/android_kernel_leeco_s2" path="kernel/leeco/s2" remote="github" revision="lineage-18.1" />
+</manifest>
