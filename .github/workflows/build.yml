@@ -34,6 +34,7 @@ jobs:
         run: |
           ~/bin/repo init --depth=1 -u https://github.com/LineageOS/android.git -b lineage-18.1 --git-lfs     
           cd /home/runner/work/Build/Build
+          ~/bin/repo sync
           mkdir -p .repo/local_manifests
           cp .github/workflows/s2.xml .repo/local_manifests/
           ~/bin/repo sync
